@@ -53,6 +53,29 @@ CREATE TABLE rentEquipment(
 );
 
 
+
+DROP TRIGGER EquipmentReturn
+GO
+CREATE TRIGGER EquipmentReturn
+ON rentEquipment
+AFTER INSERT
+AS
+BEGIN
+DECLARE @EquipmentID INT, @ReturnTime DATETIME, @ReturnToBranch VARCHAR(30);
+SELECT @EquipmentID = i.rEquipmentID, @ReturnTime = i.returnTime, @ReturnToBranch = i.returnTo
+FROM inserted i;
+-- Update the Equipment table ONLY if the equipment has been returned
+IF @ReturnTime IS NOT NULL AND @ReturnToBranch IS NOT NULL
+BEGIN
+  UPDATE Equipment
+  SET available = 1, 
+  BranchName = @ReturnToBranch
+  WHERE EquipmentID = @EquipmentID;
+  END
+END;
+GO
+
+
 INSERT INTO Customer (Email, fname, sname, phone) VALUES
 ('john.doe@example.com', 'John', 'Doe', '123-456-7890'),
 ('jane.smith@example.com', 'Jane', 'Smith', '987-654-3210'),

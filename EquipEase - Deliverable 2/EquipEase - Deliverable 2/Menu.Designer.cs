@@ -89,6 +89,7 @@
             this.buttonSummaryReport.TabIndex = 4;
             this.buttonSummaryReport.Text = "Summary Report";
             this.buttonSummaryReport.UseVisualStyleBackColor = true;
+            this.buttonSummaryReport.Click += new System.EventHandler(this.buttonSummaryReport_Click);
             // 
             // buttonReturnEquipment
             // 
@@ -99,6 +100,7 @@
             this.buttonReturnEquipment.TabIndex = 5;
             this.buttonReturnEquipment.Text = "Return Equipment";
             this.buttonReturnEquipment.UseVisualStyleBackColor = true;
+            this.buttonReturnEquipment.Click += new System.EventHandler(this.buttonReturnEquipment_Click);
             // 
             // Menu
             // 

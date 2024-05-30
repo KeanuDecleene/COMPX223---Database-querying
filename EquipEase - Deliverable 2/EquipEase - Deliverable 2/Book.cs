@@ -196,7 +196,7 @@ namespace EquipEase___Deliverable_2
             {
                 if (SQL.con.State == System.Data.ConnectionState.Open)
                 {
-                    SQL.con.Close(); // closes the SQL connection 
+                    SQL.con.Close(); // close connection
                 }
             }
         }

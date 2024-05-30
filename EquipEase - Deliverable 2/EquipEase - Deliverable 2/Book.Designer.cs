@@ -163,11 +163,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 39.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(234, 18);
+            this.label4.Location = new System.Drawing.Point(234, 35);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(233, 61);
+            this.label4.Size = new System.Drawing.Size(275, 61);
             this.label4.TabIndex = 16;
-            this.label4.Text = "Booking:";
+            this.label4.Text = "Book/Hire:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // textBoxUserEmail
@@ -194,7 +194,7 @@
             this.buttonRent.Name = "buttonRent";
             this.buttonRent.Size = new System.Drawing.Size(168, 55);
             this.buttonRent.TabIndex = 19;
-            this.buttonRent.Text = "Rent";
+            this.buttonRent.Text = "Book/Hire";
             this.buttonRent.UseVisualStyleBackColor = true;
             this.buttonRent.Click += new System.EventHandler(this.buttonRent_Click);
             // 

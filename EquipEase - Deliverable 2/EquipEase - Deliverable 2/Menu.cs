@@ -42,5 +42,22 @@ namespace EquipEase___Deliverable_2
         {
             this.Close();
         }
+
+        private void buttonReturnEquipment_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Return form = new Return();
+            form.ShowDialog();
+            this.Close();
+        }
+
+        private void buttonSummaryReport_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Summary form = new Summary();
+            form.ShowDialog();
+            this.Close();
+        }
+    
     }
 }

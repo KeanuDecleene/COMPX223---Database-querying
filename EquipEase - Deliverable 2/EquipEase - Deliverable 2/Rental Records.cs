@@ -63,6 +63,10 @@ namespace EquipEase___Deliverable_2
                 //If an error happens here, it means error in locating data
                 MessageBox.Show("Error in querying database.  Please check that the database is connected.");
             }
+            finally
+            {
+                SQL.con.Close();
+            }
         }
 
         /// <summary>

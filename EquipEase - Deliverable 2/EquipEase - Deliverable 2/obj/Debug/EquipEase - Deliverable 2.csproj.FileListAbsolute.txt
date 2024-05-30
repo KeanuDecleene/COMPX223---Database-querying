@@ -11,3 +11,5 @@ D:\COMPX223 - Deliverable 2\EquipEase - Deliverable 2\EquipEase - Deliverable 2\
 D:\COMPX223 - Deliverable 2\EquipEase - Deliverable 2\EquipEase - Deliverable 2\obj\Debug\EquipEase - Deliverable 2.pdb
 D:\COMPX223 - Deliverable 2\EquipEase - Deliverable 2\EquipEase - Deliverable 2\obj\Debug\EquipEase___Deliverable_2.Rental_Records.resources
 D:\COMPX223 - Deliverable 2\EquipEase - Deliverable 2\EquipEase - Deliverable 2\obj\Debug\EquipEase___Deliverable_2.Book.resources
+D:\COMPX223 - Deliverable 2\EquipEase - Deliverable 2\EquipEase - Deliverable 2\obj\Debug\EquipEase___Deliverable_2.Return.resources
+D:\COMPX223 - Deliverable 2\EquipEase - Deliverable 2\EquipEase - Deliverable 2\obj\Debug\EquipEase___Deliverable_2.Summary.resources
