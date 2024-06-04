@@ -11,6 +11,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net.Mail;
 
 namespace EquipEase___Deliverable_2
 {
@@ -125,9 +126,29 @@ namespace EquipEase___Deliverable_2
                 return;
             }
 
+            if (!email.Contains("@") || !email.Contains("."))
+            {
+                MessageBox.Show("Please enter a valid email address");
+                return;
+            }
+
             int rentalID = 0;
             try
             {
+                SQL.con.Open();
+                string checkEmail = "SELECT COUNT(*) FROM Customer WHERE Email = @Email";
+                using (SqlCommand command = new SqlCommand(checkEmail, SQL.con))
+                {
+                    command.Parameters.AddWithValue("@Email", email);
+                    int count = (int)command.ExecuteScalar();
+                    if (count == 0)
+                    {
+                        MessageBox.Show("Email does not exist in the database.");
+                        return;
+                    }
+                }
+
+
                 // Insert into Rental table
                 string insertRentalQuery = "INSERT INTO Rental (startTime, hireFrom, CustomerEmail) VALUES (@startTime, @branch, @customerEmail)";
                 using (SqlCommand command = new SqlCommand(insertRentalQuery, SQL.con))
@@ -135,8 +156,6 @@ namespace EquipEase___Deliverable_2
                     command.Parameters.AddWithValue("@startTime", startTime);
                     command.Parameters.AddWithValue("@branch", branch);
                     command.Parameters.AddWithValue("@customerEmail", email);
-
-                    SQL.con.Open();
                     command.ExecuteNonQuery();
                 }
 
@@ -183,7 +202,6 @@ namespace EquipEase___Deliverable_2
                 {
                     command.Parameters.AddWithValue("@equipmentID", equipmentID);
                     command.Parameters.AddWithValue("@rentalID", rentalID);
-
                     command.ExecuteNonQuery();
                     MessageBox.Show("Equipment booked and hired successfully");
                 }

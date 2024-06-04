@@ -11,6 +11,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace EquipEase___Deliverable_2
 {
@@ -65,7 +66,10 @@ namespace EquipEase___Deliverable_2
             }
             finally
             {
-                SQL.con.Close();
+                if (SQL.con.State == System.Data.ConnectionState.Open)
+                {
+                    SQL.con.Close(); // close connection
+                }
             }
         }
 
@@ -115,7 +119,12 @@ namespace EquipEase___Deliverable_2
             string filter = "";
             string selectedFilter = "";
             try 
-            { 
+            {
+                if (comboBoxFilter.SelectedIndex == -1)
+                {
+                    MessageBox.Show("FILTER IS EMPTY");
+                    return;
+                }
                 selectedFilter = comboBoxFilter.SelectedItem.ToString(); 
             } 
             catch (Exception ex) 
@@ -174,6 +183,13 @@ namespace EquipEase___Deliverable_2
             catch
             {
                 MessageBox.Show("Error in querying database.  Please check that the database is connected.");
+            }
+            finally
+            {
+                if (SQL.con.State == System.Data.ConnectionState.Open)
+                {
+                    SQL.con.Close(); // close connection
+                }
             }
 
         }

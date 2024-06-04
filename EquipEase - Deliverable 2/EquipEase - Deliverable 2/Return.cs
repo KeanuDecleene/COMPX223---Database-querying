@@ -42,6 +42,23 @@ namespace EquipEase___Deliverable_2
 
             try
             {
+                SQL.con.Open();
+
+                // checking for duplicate equipmentID and rentalID in database
+                query = "SELECT COUNT(*) FROM rentEquipment WHERE rEquipmentID = @equipmentID AND rRentalID = @rentalID";
+                using (SqlCommand cmd = new SqlCommand(query, SQL.con))
+                {
+                    cmd.Parameters.AddWithValue("@equipmentID", equipmentID);
+                    cmd.Parameters.AddWithValue("@rentalID", rentalID);
+
+                    int count = Convert.ToInt32(cmd.ExecuteScalar());
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Equipment is already returned check equipmentID and rentalID");
+                        return;
+                    }
+                }
+
                 query = "INSERT INTO rentEquipment (rEquipmentID, rRentalID, returnTime, returnTo) VALUES (@equipmentID, @rentalID, @returnTime, @returnToBranch)";
                 using (SqlCommand cmd = new SqlCommand(query, SQL.con))
                 {
@@ -50,7 +67,6 @@ namespace EquipEase___Deliverable_2
                     cmd.Parameters.AddWithValue("@returnTime", returnTime);
                     cmd.Parameters.AddWithValue("@returnToBranch", returnToBranch);
 
-                    SQL.con.Open();
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Equipment return success.");
@@ -59,7 +75,6 @@ namespace EquipEase___Deliverable_2
             }
             catch (Exception ex)
             {
-                MessageBox.Show(@"An error occured while returning equipment:" + "\n" + " Check if the EquipmentID and rentalID are valid ID's" + "\n" + " Check if Duplicated");
                 MessageBox.Show(ex.Message);
             }
             finally
