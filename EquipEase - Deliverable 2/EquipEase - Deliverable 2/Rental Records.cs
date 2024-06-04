@@ -99,11 +99,11 @@ namespace EquipEase___Deliverable_2
                 emailAddress = SQL.read["Email"].ToString();
                 //display each of the rows in a nice way
                 listBoxRecords.Items.Add(equipmentType.PadRight(20) +
-                startTime.PadRight(25) +
-                returnTime.PadRight(25) +
-                branchNameHiredFrom.PadRight(30) +
-                branchNameReturnedTo.PadRight(30) +
-                emailAddress.PadRight(20));
+                     startTime.PadRight(25) +
+                     returnTime.PadRight(25) +
+                     branchNameHiredFrom.PadRight(30) +
+                     branchNameReturnedTo.PadRight(30) +
+                     emailAddress.PadRight(20));
             }
         }
 

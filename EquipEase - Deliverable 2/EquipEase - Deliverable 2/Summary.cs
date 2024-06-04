@@ -207,7 +207,7 @@ namespace EquipEase___Deliverable_2
             FROM 
             Rental r
             JOIN 
-            rentEquipment re ON r.RentalID = re.rRentalID
+             rentEquipment re ON r.RentalID = re.rRentalID
             WHERE 
             YEAR(r.startTime) = 2023
             GROUP BY 
