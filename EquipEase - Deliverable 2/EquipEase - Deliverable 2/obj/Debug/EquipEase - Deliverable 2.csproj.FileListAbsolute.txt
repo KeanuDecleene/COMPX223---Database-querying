@@ -13,3 +13,18 @@ D:\COMPX223 - Deliverable 2\EquipEase - Deliverable 2\EquipEase - Deliverable 2\
 D:\COMPX223 - Deliverable 2\EquipEase - Deliverable 2\EquipEase - Deliverable 2\obj\Debug\EquipEase___Deliverable_2.Book.resources
 D:\COMPX223 - Deliverable 2\EquipEase - Deliverable 2\EquipEase - Deliverable 2\obj\Debug\EquipEase___Deliverable_2.Return.resources
 D:\COMPX223 - Deliverable 2\EquipEase - Deliverable 2\EquipEase - Deliverable 2\obj\Debug\EquipEase___Deliverable_2.Summary.resources
+D:\COMPX223---Database-querying\EquipEase - Deliverable 2\EquipEase - Deliverable 2\bin\Debug\EquipEase - Deliverable 2.exe.config
+D:\COMPX223---Database-querying\EquipEase - Deliverable 2\EquipEase - Deliverable 2\bin\Debug\EquipEase - Deliverable 2.exe
+D:\COMPX223---Database-querying\EquipEase - Deliverable 2\EquipEase - Deliverable 2\bin\Debug\EquipEase - Deliverable 2.pdb
+D:\COMPX223---Database-querying\EquipEase - Deliverable 2\EquipEase - Deliverable 2\obj\Debug\EquipEase - Deliverable 2.csproj.AssemblyReference.cache
+D:\COMPX223---Database-querying\EquipEase - Deliverable 2\EquipEase - Deliverable 2\obj\Debug\EquipEase - Deliverable 2.csproj.SuggestedBindingRedirects.cache
+D:\COMPX223---Database-querying\EquipEase - Deliverable 2\EquipEase - Deliverable 2\obj\Debug\EquipEase___Deliverable_2.Book.resources
+D:\COMPX223---Database-querying\EquipEase - Deliverable 2\EquipEase - Deliverable 2\obj\Debug\EquipEase___Deliverable_2.Menu.resources
+D:\COMPX223---Database-querying\EquipEase - Deliverable 2\EquipEase - Deliverable 2\obj\Debug\EquipEase___Deliverable_2.Properties.Resources.resources
+D:\COMPX223---Database-querying\EquipEase - Deliverable 2\EquipEase - Deliverable 2\obj\Debug\EquipEase___Deliverable_2.Rental_Records.resources
+D:\COMPX223---Database-querying\EquipEase - Deliverable 2\EquipEase - Deliverable 2\obj\Debug\EquipEase___Deliverable_2.Return.resources
+D:\COMPX223---Database-querying\EquipEase - Deliverable 2\EquipEase - Deliverable 2\obj\Debug\EquipEase___Deliverable_2.Summary.resources
+D:\COMPX223---Database-querying\EquipEase - Deliverable 2\EquipEase - Deliverable 2\obj\Debug\EquipEase - Deliverable 2.csproj.GenerateResource.cache
+D:\COMPX223---Database-querying\EquipEase - Deliverable 2\EquipEase - Deliverable 2\obj\Debug\EquipEase - Deliverable 2.csproj.CoreCompileInputs.cache
+D:\COMPX223---Database-querying\EquipEase - Deliverable 2\EquipEase - Deliverable 2\obj\Debug\EquipEase - Deliverable 2.exe
+D:\COMPX223---Database-querying\EquipEase - Deliverable 2\EquipEase - Deliverable 2\obj\Debug\EquipEase - Deliverable 2.pdb
