@@ -49,7 +49,7 @@ namespace EquipEase___Deliverable_2
                         purchaseDate = Convert.ToDateTime(SQL.read["purchaseDate"]);
                         //display each of the rows in a nice way
                         listBoxRecentlyPurchased.Items.Add(equipmentType.PadRight(20) +
-                             purchaseDate.ToShortDateString().PadRight(25));
+                        purchaseDate.ToShortDateString().PadRight(25));
                     }
                 }
                 else
@@ -66,7 +66,6 @@ namespace EquipEase___Deliverable_2
             {
                 SQL.con.Close();
             }
-           
         }
 
         private void buttonMenu_Click(object sender, EventArgs e)
@@ -220,4 +219,3 @@ namespace EquipEase___Deliverable_2
         }
     }
 }
- 
